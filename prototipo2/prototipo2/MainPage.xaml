@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:Views="clr-namespace:prototipo2.Views"
+       x:Class="prototipo2.MainPage">
+
+    <Shell.Resources>
+        <Style TargetType="TabBar">
+            <Setter Property="Shell.TabBarBackgroundColor"
+            Value="#5A189A" />
+            <Setter Property="Shell.TabBarTitleColor"
+            Value="#CC99FF" />
+            <Setter Property="Shell.TabBarUnselectedColor"
+            Value="#240046" />
+            <Setter Property="Shell.BackgroundColor"
+            Value="#5A189A"/>
+        </Style>
+    </Shell.Resources>
+    
+    
+    <TabBar>
+        <Tab Icon="livro" Route="listaAulas">
+            <ShellContent Shell.NavBarIsVisible="False">
+                <Views:Aulas Title="Aulas"/>
+            </ShellContent>
+        </Tab>
+        <Tab Icon="trofeu" Route="ListaAtividades">
+            <ShellContent Shell.NavBarIsVisible="False">
+                <Views:Atividades Title="Atividades" />
+            </ShellContent>
+        </Tab>
+        <Tab Icon="definicoes" Route="Config">
+            <ShellContent Shell.NavBarIsVisible="False">
+                <Views:config Title="Configurações" />
+            </ShellContent>
+        </Tab>
+
+    </TabBar>
+    
+    
+</Shell>

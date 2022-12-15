@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="prototipo2.Views.config">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#3C096C">
+            <Grid>
+                <StackLayout Grid.Row="0" BackgroundColor="#3C096C" Padding="5">
+                    <Label Text="Configurações" TextColor="#fcc70d" FontAttributes="Bold" FontSize="30" FontFamily="WorkSans" HorizontalTextAlignment="Center"/>
+                    <AbsoluteLayout>
+                        <Label Text="Usuário" TextColor="#fcc70d" FontSize="24" FontFamily="WorkSans"
+                        AbsoluteLayout.LayoutBounds="65, 80"/>
+                        <Label Text="Tamanho da fonte" TextColor="#fcc70d" FontSize="24" FontFamily="WorkSans"
+                        AbsoluteLayout.LayoutBounds="80, 230"/>
+                        <Label Text="Cor da fonte" TextColor="#fcc70d" FontSize="24" FontFamily="WorkSans"
+                        AbsoluteLayout.LayoutBounds="115, 380"/>
+
+
+                    </AbsoluteLayout>
+                </StackLayout>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="prototipo2.ViewsAtividades.Atividade12"
+             Shell.NavBarIsVisible="False"
+             Shell.TabBarIsVisible="False">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#3C096C">
+            <Grid>
+                <StackLayout Grid.Row="0" BackgroundColor="#3C096C" Padding="5">
+                    <Button BackgroundColor="#3C096C" CornerRadius="180" Text="Voltar" TextColor="#fcc70d" FontAttributes="Bold" FontSize="25" FontFamily="WorkSans"
+                    Clicked="OnRootPageButtonClicked" TextTransform="None"
+                    HorizontalOptions="Start"/>
+                    <ScrollView HeightRequest="700">
+                        <AbsoluteLayout>
+                            <Label Text="2 - Qual destes itens é um navegador?" TextColor="#fcc70d" FontSize="25" FontFamily="WorkSans"
+                            HorizontalTextAlignment="Center" VerticalTextAlignment="Center"
+                            AbsoluteLayout.LayoutBounds="15, -30, 350, 200"/>
+                            <Button x:Name="Btn1" Clicked="Btn1_Clicked" ImageSource="whatsapp.png"
+                        BackgroundColor="#5A189A" CornerRadius="15"
+                        AbsoluteLayout.LayoutBounds="15, 180, 170, 170"/>
+                            <Button x:Name="Btn2" Clicked="Btn2_Clicked" ImageSource="telefone.png"
+                        BackgroundColor="#5A189A" CornerRadius="15"
+                        AbsoluteLayout.LayoutBounds="200, 180, 170, 170"/>
+                            <Button x:Name="Btn3" Clicked="Btn3_Clicked" ImageSource="google.png"
+                        BackgroundColor="#5A189A" CornerRadius="15"
+                        AbsoluteLayout.LayoutBounds="15, 365, 170, 170"/>
+                            <Button x:Name="Btn4" Clicked="Btn4_Clicked" ImageSource="bola.png"
+                        BackgroundColor="#5A189A" CornerRadius="15"
+                        AbsoluteLayout.LayoutBounds="200, 365, 170, 170"/>
+                            <Button x:Name="BtnContinuar" Clicked="BtnContinuar_Clicked"
+                        BackgroundColor="#fcc70d" CornerRadius="15" IsVisible="False"
+                        Text="Avançar" TextColor="#5A189A" FontSize="25" FontFamily="WorkSans" TextTransform="None"
+                        AbsoluteLayout.LayoutBounds="115, 620, 150, 65"/>
+
+                        </AbsoluteLayout>
+                    </ScrollView>
+                </StackLayout>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

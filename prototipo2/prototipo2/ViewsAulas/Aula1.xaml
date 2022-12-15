@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:video="clr-namespace:Xam.Forms.VideoPlayer;assembly=Xam.Forms.VideoPlayer"
+             x:Class="prototipo2.ViewsAulas.Aula1"
+             Shell.NavBarIsVisible="False"
+             Shell.TabBarIsVisible="False">
+    <Grid BackgroundColor="#3C096C">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <video:VideoPlayer PlayCompletion="videoPlayer_PlayCompletion"
+                               Grid.Row="0" x:Name="videoPlayer"
+                               BackgroundColor="#3C096C"
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="FillAndExpand"/>
+        <ActivityIndicator Grid.Row="0"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    Color="White"
+                    BackgroundColor="Transparent"
+                    IsVisible="False"/>
+        <Button VerticalOptions="StartAndExpand" HorizontalOptions="Start" Margin="20"
+                    BackgroundColor="#3C096C" CornerRadius="180" Text="Voltar" TextColor="#fcc70d" FontAttributes="Bold" FontSize="25" FontFamily="WorkSans"
+                    Clicked="OnRootPageButtonClicked" TextTransform="None" ></Button>
+    </Grid>
+    
+</ContentPage>

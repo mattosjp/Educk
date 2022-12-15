@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="prototipo2.ViewsAtividades.Atividade11"
+             Shell.NavBarIsVisible="False"
+             Shell.TabBarIsVisible="False">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#3C096C">
+            <Grid>
+                <StackLayout Grid.Row="0" BackgroundColor="#3C096C" Padding="5">
+                    <Button BackgroundColor="#3C096C" CornerRadius="180" Text="Voltar" TextColor="#fcc70d" FontAttributes="Bold" FontSize="25" FontFamily="WorkSans"
+                    Clicked="OnRootPageButtonClicked" TextTransform="None"
+                    HorizontalOptions="Start"/>
+                    <ScrollView HeightRequest="700">
+                        <AbsoluteLayout>
+                            <Label Text="1 - Qual a principal função de um navegador?" TextColor="#fcc70d" FontSize="25" FontFamily="WorkSans"
+                            HorizontalTextAlignment="Center" VerticalTextAlignment="Center"
+                            AbsoluteLayout.LayoutBounds="15, -30, 350, 200"/>
+                            <Button x:Name="Btn1" Clicked="Bt_Clicked"
+                        BackgroundColor="#5A189A" CornerRadius="15"
+                        Text="A) Navegar pelos mares" TextColor="#fcc70d" FontSize="25" FontFamily="WorkSans" TextTransform="None"
+                        AbsoluteLayout.LayoutBounds="19, 190, 350, 85"/>
+                            <Button x:Name="Btn2" Clicked="Bt_Clicked"
+                        BackgroundColor="#5A189A" CornerRadius="15"
+                        Text="B) Trazer informações desejadas" TextColor="#fcc70d" FontSize="25" FontFamily="WorkSans" TextTransform="None"
+                        AbsoluteLayout.LayoutBounds="19, 290, 350, 85"/>
+                            <Button x:Name="Btn3" Clicked="Bt_Clicked"
+                        BackgroundColor="#5A189A" CornerRadius="15"
+                        Text="C) Ligar para alguém" TextColor="#fcc70d" FontSize="25" FontFamily="WorkSans" TextTransform="None"
+                        AbsoluteLayout.LayoutBounds="19, 390, 350, 85"/>
+                            <Button x:Name="Btn4" Clicked="Bt_Clicked"
+                        BackgroundColor="#5A189A" CornerRadius="15"
+                        Text="D) Pedir dados pessoais" TextColor="#fcc70d" FontSize="25" FontFamily="WorkSans" TextTransform="None"
+                        AbsoluteLayout.LayoutBounds="19, 490, 350, 85"/>
+                            <Button x:Name="BtnContinuar" Clicked="BtnContinuar_Clicked"
+                        BackgroundColor="#fcc70d" CornerRadius="15" IsVisible="False"
+                        Text="Avançar" TextColor="#5A189A" FontSize="25" FontFamily="WorkSans" TextTransform="None"
+                        AbsoluteLayout.LayoutBounds="115, 620, 150, 65"/>
+
+                        </AbsoluteLayout>
+                    </ScrollView>
+                </StackLayout>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

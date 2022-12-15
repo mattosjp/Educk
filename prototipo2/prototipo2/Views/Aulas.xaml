@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="prototipo2.Views.Aulas">
+    <ContentPage.Content>
+        <Grid>
+            <StackLayout Grid.Row="0" BackgroundColor="#3C096C" Padding="5">
+                <Label Text="Aulas" TextColor="#fcc70d" FontAttributes="Bold" FontSize="30" FontFamily="WorkSans" HorizontalTextAlignment="Center"/>
+                <ScrollView HeightRequest="700">
+                    <AbsoluteLayout>
+                        <Button x:Name="BtAula1" BackgroundColor="#5A189A" CornerRadius="15"
+                        Text="1º Aula" TextColor="#fcc70d" FontAttributes="Bold" FontSize="30" FontFamily="WorkSans" TextTransform="None" 
+                        AbsoluteLayout.LayoutBounds="26, 70, 340, 135"
+                        Clicked="BtAula1_Clicked"/>
+                        <Button BackgroundColor="#5A189A" CornerRadius="15"
+                        Text="Navegador" TextColor="#fcc70d" FontSize="25" FontFamily="WorkSans" TextTransform="None"   
+                         AbsoluteLayout.LayoutBounds="24, 240, 155, 155"
+                         Clicked="BtAula2_Clicked"/>
+                        <Button BackgroundColor="#5A189A" CornerRadius="15" 
+                        Text="Volume" TextColor="#fcc70d" FontAttributes="Bold" FontSize="25" FontFamily="WorkSans" TextTransform="None" 
+                        AbsoluteLayout.LayoutBounds="210, 240, 155, 155"/>
+                        <Button BackgroundColor="#5A189A" CornerRadius="15"
+                        Text="Contatos" TextColor="#fcc70d" FontAttributes="Bold" FontSize="25" FontFamily="WorkSans" TextTransform="None" 
+                        AbsoluteLayout.LayoutBounds="24, 425, 155, 155"/>
+                        <Button BackgroundColor="#5A189A" CornerRadius="15"
+                        Text="Serviços Bancários" TextColor="#fcc70d" FontAttributes="Bold" FontSize="25" FontFamily="WorkSans" TextTransform="None" 
+                        AbsoluteLayout.LayoutBounds="210, 425, 155, 155"/>
+                        <Button BackgroundColor="#5A189A" CornerRadius="15"
+                        Text="Baixar aplicativos" TextColor="#fcc70d" FontAttributes="Bold" FontSize="25" FontFamily="WorkSans" TextTransform="None" 
+                        AbsoluteLayout.LayoutBounds="24, 610, 155, 155"/>
+                        <Button BackgroundColor="#5A189A" CornerRadius="15"
+                        Text="Redes sociais" TextColor="#fcc70d" FontAttributes="Bold" FontSize="25" FontFamily="WorkSans" TextTransform="None" 
+                        AbsoluteLayout.LayoutBounds="210, 610, 155, 155"/>
+                    </AbsoluteLayout>
+                </ScrollView>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
